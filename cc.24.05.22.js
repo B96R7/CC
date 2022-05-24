@@ -30,6 +30,36 @@ const areaOrPerimeter = function(l , w) {
     }
   }
 
+//   The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+  function cockroachSpeed(s) {
+    return Math.floor((s * 100000) / (60 * 60))
+  }
+
+//   The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise. Examples:
+  function setAlarm(employed, vacation){
+    return employed && !vacation
+  }
+
+//   Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+  function doubleChar(str) {
+    return str.split('').map((a) => a + a, 0).join('')
+  }
+
+//   Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
+  function updateLight(current) {
+    if(current === "green"){
+      return "yellow"
+    } else if(current === "yellow"){
+      return "red"
+    } else {
+      return "green"
+    }
+  }
+
+//   You have to write a function that accepts three parameters:
+  function enough(cap, on, wait) {
+    return (on+wait > cap) ? on+wait-cap : 0;
+  }
 
 
 
